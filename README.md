@@ -1,1 +1,6 @@
 # caesar225-langgraph-MAT496
+
+In module 1 video 1, I learnt about the motivation behind LangGraph. A solitary language model alone is somewhat limited, as it doesn't have access to tools, as an example. So, many LLM applications use some kind of control flow with steps before and after LLM calls, like tool calls or retrieval steps. This control flow forms a chain. But, we want LLM systems that can pick their control flow. Here's where an agent comes in. Simply put, an agent is control flow that's defined by an LLM. We can vary the amount of control we give to the LLM applications, from low to high. On the lower end, we have routers and on the other end, we have fully autonomous agents. The relationship between control and reliability is an inverse one. 
+This is where LangGraph comes in, as it helps us build agents with high reliability, even while we give them more control. We can express custom control flows as graphs. They contain nodes, which we can think about as steps in our application. Edges are just the connectivity between nodes and can route control flow based on LLM decisions. LangGraph has a lot of advanced controllability features like persistence, streaming, human in the loop, etc.
+
+In module 1 video 2,
