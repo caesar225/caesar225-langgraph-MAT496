@@ -33,3 +33,5 @@ In module 3 video 1, we built up on memory by using human in the loop which allo
 
 In module 3 video 2, I learnt that streaming allows us to emit the graph state at every step, which sets up human in the loop. Some use cases for human in the loop are approval, debugging or directly editing the state of the graph or agent with human feedback. Breakpoints are a way to execute human-in-the-loop as they can stop the graph at specific steps or nodes. In the case of a tool calling agent, we can use interrupt_before="tools" where tools is our tools node. This will stop the agent from calling any tools, and it will seek user approval. If the user approves, then we can use Graph.stream(None,{thread_id}), which will execute the graph from the current state, in our case, the tools node. I reconfigured the code to work with Groq, instead of OpenAI. I also used breakpoints to create an interactive calculator. https://github.com/caesar225/caesar225-langgraph-MAT496/blob/main/breakpoints.ipynb
 
+In module 3 video 3,
+
